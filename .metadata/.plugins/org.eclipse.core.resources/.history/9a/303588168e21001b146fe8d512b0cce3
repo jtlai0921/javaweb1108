@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body background="pic/b.jpg">
+<h1>this is my web</h1>
+<h2>this is my web</h2>
+<h3>this is my web</h3>
+<h4>this is my web</h4>
+<h5>this is my web</h5>
+<h6>this is my web</h6>
+<h3>本预览个尺寸：600×599像素。</h3>
+<font size=1 color="red">其他分辨率：240×240像素 | 481×480像素 | 601×600像素 | 769×768像素 |</font>
+<font size=2 color="#123456">1,025×1,024像素 | 1,600×1,598像素。</font>
+<font size=3 color="#444444">原始文件箇文件维基共享资源里个，作兴会畀别个项目使用。渠个描述页里个说明显示如下。</font>
+<font size=4 color="#789456">（1,600×1,598像素，文件大小：273 KB，MIME类型：image/jpeg）</font>
+<font size=5 color="FFFFFF">（1,600×1,598像素，文件大小：273 KB，MIME类型：image/jpeg）</font>
+<font size=6 color="888888">（1,600×1,598像素，文件大小：273 KB，MIME类型：image/jpeg）</font>
+<font size=7 color="#456123">（1,600×1,598像素，文件大小：273 KB，MIME类型：image/jpeg）</font>
+<br>
+<hr>
+<table border=2 width=60% align="center">
+	<tr>
+		<td width=15%>A
+		<td width=20%>B
+		<td width=25%>C
+	<tr>
+		<td height=100>1
+		<td>2
+		<td>3
+	<tr>
+		<td height=200>4
+		<td>5
+		<td>6
+	<tr>
+		<td colspan=3>test
+</table>
+this is my web
+<!-- 1231321212313 -->
+</body>
+</html>
