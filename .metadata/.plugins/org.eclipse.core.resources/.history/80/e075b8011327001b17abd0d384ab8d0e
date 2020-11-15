@@ -31,7 +31,6 @@ public class ex3 extends HttpServlet {
 		out.println("<h1>你的資料為</h1>");
 		out.println("姓名="+Name+"<br>");
 		out.println("密碼="+"*****");
-		
 	}
 
 	
