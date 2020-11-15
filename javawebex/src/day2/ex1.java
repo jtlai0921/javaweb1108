@@ -1,6 +1,8 @@
 package day2;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,15 +19,23 @@ public class ex1 extends HttpServlet {
         super();
        
     }
-
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("do GET");
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		System.out.println("do GET");
+    	response.setCharacterEncoding("UTF-8");
+    	response.setContentType("text/html");
+    	PrintWriter out=response.getWriter();    	
+    	out.println("<h1>hello servlet</h1>");
+    	out.println("<a href=\"http://www.google.com\" target=_blank>goole</a>");
+    	out.println("<h1>¥¨¦K¹q¸£</h1>");
 	}
-
 	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("do POST");
-	}
+//	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		System.out.println("do GET");
+//	}
+//
+//	
+//	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		System.out.println("do POST");
+//	}
 
 }

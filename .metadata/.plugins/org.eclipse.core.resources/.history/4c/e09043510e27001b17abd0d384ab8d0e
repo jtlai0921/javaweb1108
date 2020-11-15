@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="../ex1" target=_blank>ex1</a><br>
+<a href="../ex2" target=_blank>ex2</a>
+<hr>
+<form action="../ex3" method="post">
+password:<input type="password" name="password">
+<input type="submit" value="ok">
+</form>
+</body>
+</html>
