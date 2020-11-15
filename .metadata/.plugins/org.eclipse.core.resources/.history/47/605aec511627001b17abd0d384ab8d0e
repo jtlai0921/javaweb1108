@@ -28,7 +28,7 @@ public class ex3 extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		String Name=request.getParameter("name");
 		String Password=request.getParameter("password");
-		String Add=request.getParameter("add");
+		String Address=request.getParameter("address");
 		String Sex=request.getParameter("sex");
 		String Carrer=request.getParameter("carrer");//null
 		String Interest=request.getParameter("interest");
@@ -37,7 +37,7 @@ public class ex3 extends HttpServlet {
 		out.println("<h1>你的資料為</h1>"+
 		"姓名:"+Name+
 		"<br>密碼:"+Password+
-		"<br>地址:"+Add+
+		"<br>地址:"+Address+
 		"<br>性別:"+Sex+
 		"<br>職業:"+Carrer+
 		"<br>興趣:"+Interest+

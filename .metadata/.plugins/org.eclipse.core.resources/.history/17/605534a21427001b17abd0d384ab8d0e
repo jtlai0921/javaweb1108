@@ -19,7 +19,7 @@ password:<input type="password" name="password">
 	密碼:<input type="password" name="password"><br>
 	性別:<input type="radio" name="sex" value="">男
 		<input type="radio" name="sex" value="">女<br>
-	地址:<input type="text" name="add"><br>
+	地址:<input type="password" name="password"><br>
 	職業:<select name="career">
 		<option value="">資訊
 		<option value="">金融
@@ -28,7 +28,7 @@ password:<input type="password" name="password">
 	興趣:<input type="checkbox" name="interest" value="">運動
 		<input type="checkbox" name="interest" value="">音樂
 		<input type="checkbox" name="interest" value="">電影<br>
-	備註:<textarea rows="40" cols="160" name="memery">
+	備註:<textarea rows="40" cols="160" name="Memery">
 	請輸入~~~</textarea><br>
 	<input type="submit" value="ok">
 </form>
