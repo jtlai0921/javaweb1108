@@ -22,11 +22,11 @@ public class ex3 extends HttpServlet {
 
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//System.out.println("password="+request.getParameter("password"));
+		System.out.println("password="+request.getParameter("password"));
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
 		PrintWriter out=response.getWriter();
-		request.setCharacterEncoding("big5");
+		request.setCharacterEncoding("utf-8");
 		
 		String Name=request.getParameter("name");
 		String Password=request.getParameter("password");
