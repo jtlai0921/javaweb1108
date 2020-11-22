@@ -8,5 +8,6 @@
 </head>
 <body>
 <jsp:include page="ex5.jsp"></jsp:include>
+<jsp:forward page="ex6.jsp"></jsp:forward>
 </body>
 </html>
