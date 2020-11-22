@@ -35,5 +35,11 @@ name:<input type="text" name="name"><br>
 password:<input type="password" name="password"><br>
 <input type="submit" value="ok">
 </form>
+========================================
+<hr>
+<form action="ex4.jsp" method="post">
+½Ð¿é¤J<input type="text" name="test"><br>
+<input type="submit" value="ok">
+</form>
 </body>
 </html>
