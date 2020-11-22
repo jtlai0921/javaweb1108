@@ -7,12 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<form action="addController" method="post">
-name:<input type="text" name="name"><br>
-address:<input type="text" name="address"><br>
-<input type="submit" value="ok"><br>
-</form>
-</form>
+<h1>OKOKOKOKOKOKADDADDADD</h1>
 </body>
 </html>

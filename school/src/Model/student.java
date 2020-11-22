@@ -3,7 +3,7 @@ package Model;
 public class student {
 private Integer id;
 private String name;
-private String adress;
+private String address;
 public Integer getId() {
 	return id;
 }
@@ -17,9 +17,9 @@ public void setName(String name) {
 	this.name = name;
 }
 public String getAdress() {
-	return adress;
+	return address;
 }
 public void setAdress(String adress) {
-	this.adress = adress;
+	this.address = adress;
 }
 }
