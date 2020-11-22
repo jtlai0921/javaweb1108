@@ -20,6 +20,8 @@ Date d=new Date();
 月:<%=d.getMonth()+1 %><br>
 時:<%=d.getHours() %><br>
 分:<%=d.getMinutes() %><br>
-分:<%=d.getSeconds() %><br>
+S:<%=d.getSeconds() %><br>
+S:<%=d.getTimezoneOffset() %><br>
+
 </body>
 </html>

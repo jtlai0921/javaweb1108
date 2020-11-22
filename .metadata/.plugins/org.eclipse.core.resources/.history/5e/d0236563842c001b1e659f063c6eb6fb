@@ -22,6 +22,5 @@ Date d=new Date();
 ¤À:<%=d.getMinutes() %><br>
 S:<%=d.getSeconds() %><br>
 S:<%=d.getTimezoneOffset() %><br>
-
 </body>
 </html>
