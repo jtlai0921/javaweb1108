@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 import Model.student;
 
-public class studentDao implements impleDao{
+public class studentDao implements implDao{
 
 	public static void main(String[] args) {
 		student s=new student();
@@ -39,6 +39,18 @@ public class studentDao implements impleDao{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public Boolean queryUser(String username, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean queryUser(String username) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
