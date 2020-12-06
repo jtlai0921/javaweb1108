@@ -1,14 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=BIG5"
     pageEncoding="BIG5"
     import="Model.Porder"
-     import="Dao.porderDao"%>
+    import="Dao.porderDao"%>
 <!DOCTYPE html>
 <html>
 <head>
 <%
-	
 Porder p=(Porder)session.getAttribute("P");
-new porderDao().add(p);
+//new porderDao().add(p);
 %>
 <meta charset="BIG5">
 

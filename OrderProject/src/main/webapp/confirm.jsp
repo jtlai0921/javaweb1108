@@ -57,7 +57,7 @@
 				
 				<tr>
 					<td colspan=2 align=center>
-					<a href="finish.jsp">確定</a>
+					<a href="addOrderController">確定</a>
 					<a href="addOrder.jsp">重新點餐</a>
 				
 			</table>
