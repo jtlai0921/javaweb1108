@@ -11,6 +11,16 @@
 		<tr height=100>
 			<td align=center><jsp:include page="title.jsp"></jsp:include>
 		<tr height=500>
+		<td  align=center>
+				<table width=400 >
+					<tr align=center>
+						<td><a href="addOrder.jsp">1)點餐</a>
+					<tr align=center>
+						<td><a href="">2)查詢</a>
+					<tr align=center>
+						<td><a href="">3)修改</a>
+					<tr align=center>
+						<td><a href="">4)刪除</a>
 			<td>
 		<tr height=50>
 			<td align=center><jsp:include page="end.jsp"></jsp:include>
