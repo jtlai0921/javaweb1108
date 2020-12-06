@@ -9,7 +9,7 @@ public interface implDao {
 	static Connection getDB()
 	{
 		Connection conn=null;
-		String url="jdbc:mysql://localhost:3306/company";
+		String url="jdbc:mysql://localhost:3306/company?useUnicode=true&characterEncoding=utf-8";
 		String user="root";
 		String password="1234";
 		

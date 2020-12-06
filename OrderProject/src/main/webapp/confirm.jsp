@@ -46,7 +46,7 @@
 					<td width=100 align=center>B套餐(加蛋135):
 					<td width=300 align=center><%=p.getB() %>
 				<tr>
-					<td width=100 align=center>CB套餐(加大150):
+					<td width=100 align=center>C套餐(加大150):
 					<td width=300 align=center><%=p.getC() %>
 				<tr>
 					<td colspan=2>

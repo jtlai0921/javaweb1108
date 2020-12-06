@@ -18,7 +18,7 @@
 							<td colspan=3>						
 							®à¸¹:
 							<select name="desk">
-								<option value="VIP1">VIP1
+								<option value="°²">°²
 								<option value="VIP2">VIP2
 								<option value="VIP3">VIP3
 								<option value="VIP4">VIP4
