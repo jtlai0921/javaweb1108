@@ -91,6 +91,7 @@ public class porderDao implements implDao {
 		}
 		return show;
 	}
+	
 
 	@Override
 	public void update(int id, Object o) {
@@ -102,6 +103,35 @@ public class porderDao implements implDao {
 	public void delete(int id) {
 		// TODO Auto-generated method stub
 
+	}
+
+	public Object queryObject(int id)  {
+		Connection conn=implDao.getDB();
+		String SQL="select * from porder where id=?";
+		Porder p=null;
+		try {
+			PreparedStatement ps=conn.prepareStatement(SQL);
+			ps.setInt(1, id);
+			ResultSet rs=ps.executeQuery();
+			
+			if(rs.next())
+			{
+				p=new Porder();
+				
+				p.setId(rs.getInt("id"));
+				p.setDesk(rs.getString("desk"));
+				p.setA(rs.getInt("A"));
+				p.setB(rs.getInt("B"));
+				p.setC(rs.getInt("C"));
+				p.setSum(rs.getInt("sum"));
+			
+			}		
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return p;
 	}
 
 }

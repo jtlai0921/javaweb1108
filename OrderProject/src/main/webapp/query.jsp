@@ -31,11 +31,12 @@
 									<td>AÀ\
 									<td>BÀ\
 									<td>CÀ\
-									<td>ª÷ÃB <%
+									<td>ª÷ÃB 
+									<%
 										String Start = request.getParameter("start");
 									String End = request.getParameter("end");
-
-									if (Start != null && End != null) {
+								
+									if (Start != null && End != null && Start !="" && End !="") {
 										int S = Integer.parseInt(Start);
 										int E = Integer.parseInt(End);
 
