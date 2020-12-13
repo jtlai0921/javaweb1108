@@ -11,7 +11,7 @@ public class porderDao implements implDao {
 
 	public static void main(String[] args) {
 		// System.out.println(implDao.getDB());
-		
+
 		Porder p = new Porder("aaa", 2, 1, 1);
 
 		new porderDao().add(p);
@@ -44,15 +44,20 @@ public class porderDao implements implDao {
 
 	@Override
 	public String queryAll() {
-		Connection conn = implDao.getDB();
-		String sql = "select * from porder";
-		String show = "";
+		Connection conn=implDao.getDB();
+		String sql="select * from porder";
+		String show="";
 		try {
-			PreparedStatement ps = conn.prepareStatement(sql);
-			ResultSet rs = ps.executeQuery();
-			while (rs.next()) {
-				show = show + "\tID" + rs.getInt("id") + "\t桌號:" + rs.getString("desk") + "\tA:" + rs.getInt("A")
-						+ "\tB:" + rs.getInt("B") + "\tC:" + rs.getInt("C") + "\tsum:" + rs.getInt("sum") + "\n";
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ResultSet rs=ps.executeQuery();
+			while(rs.next())
+			{
+				show=show+"<tr><td>"+rs.getInt("id")+
+						"<td>"+rs.getString("desk")+
+						"<td>"+rs.getInt("A")+
+						"<td>"+rs.getInt("B")+
+						"<td>"+rs.getInt("C")+
+						"<td>"+rs.getInt("sum")+"\n";
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -63,17 +68,22 @@ public class porderDao implements implDao {
 
 	@Override
 	public String querySum(int start, int end) {
-		Connection conn = implDao.getDB();
-		String sql = "select * from porder where sum>=? and sum<=?";
-		String show = "";
+		Connection conn=implDao.getDB();
+		String sql="select * from porder where sum>=? and sum<=?";
+		String show="";
 		try {
-			PreparedStatement ps = conn.prepareStatement(sql);
+			PreparedStatement ps=conn.prepareStatement(sql);
 			ps.setInt(1, start);
 			ps.setInt(2, end);
-			ResultSet rs = ps.executeQuery();
-			while (rs.next()) {
-				show = show + "\tID" + rs.getInt("id") + "\t桌號:" + rs.getString("desk") + "\tA:" + rs.getInt("A")
-						+ "\tB:" + rs.getInt("B") + "\tC:" + rs.getInt("C") + "\tsum:" + rs.getInt("sum") + "\n";
+			ResultSet rs=ps.executeQuery();
+			while(rs.next())
+			{
+				show=show+"<tr><td>"+rs.getInt("id")+
+						"<td>"+rs.getString("desk")+
+						"<td>"+rs.getInt("A")+
+						"<td>"+rs.getInt("B")+
+						"<td>"+rs.getInt("C")+
+						"<td>"+rs.getInt("sum")+"\n";
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
