@@ -46,6 +46,7 @@ public void setC(Integer c) {
 	C = c;
 }
 public Integer getSum() {
+	Sum=A*120+B*135+C*150;
 	return Sum;
 }
 public void setSum(Integer sum) {

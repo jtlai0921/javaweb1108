@@ -16,8 +16,8 @@
 					<tr>
 						<td align=center>
 							<form action="query.jsp" method="post">
-								金額: 從<input type="text" name="start"> 到<input
-									type="text" name="end"> <input type="submit" value="查詢">
+								金額: 從<input type="number" name="start"> 到<input
+									type="number" name="end"> <input type="submit" value="查詢">
 							</form>
 					<tr>
 						<td>
@@ -45,6 +45,9 @@
 										out.println(new porderDao().queryAll());
 									}
 									%>
+									<tr>
+							<td colspan=6 align=center>
+							<a href="index.jsp">Home</a>
 							</table>
 					<tr>
 						<td>

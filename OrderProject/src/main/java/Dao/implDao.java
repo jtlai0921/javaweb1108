@@ -37,7 +37,7 @@ public interface implDao {
 	//查詢
 	String queryAll();	
 	String querySum(int start,int end);	
-	
+	Object queryObject (int id);
 	//修改
 	void update(int id,Object o);
 	

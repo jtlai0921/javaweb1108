@@ -18,9 +18,9 @@
 					<tr align=center>
 						<td><a href="query.jsp">2)查詢</a>
 					<tr align=center>
-						<td><a href="">3)修改</a>
+						<td><a href="update.jsp">3)修改</a>
 					<tr align=center>
-						<td><a href="">4)刪除</a>
+						<td><a href="delete.jsp">4)刪除</a>
 			<td>
 		<tr height=50>
 			<td align=center><jsp:include page="end.jsp"></jsp:include>
