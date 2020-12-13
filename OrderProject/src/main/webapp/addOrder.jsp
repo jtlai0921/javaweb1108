@@ -18,10 +18,10 @@
 							<td colspan=3>						
 							®à¸¹:
 							<select name="desk">
-								<option value="°²">°²
-								<option value="VIP2">VIP2
-								<option value="VIP3">VIP3
-								<option value="VIP4">VIP4
+								<option value="±ö">±ö
+								<option value="¦Ë">¦Ë
+								<option value="µâ">µâ
+								<option value="Äõ">Äõ
 							</select>
 						<tr>
 							<td colspan=3>	
