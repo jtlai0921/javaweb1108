@@ -34,13 +34,29 @@ public class porderDao implements implDao {
 //		// 修
 //		// new porderDao().deleteId(36);
 //		// 刪
-//		List l = new porderDao().queryAll();
+
 //
 //		for (Object o : l) {
 //			porder p3 = (porder) o;
 //			System.out.println(p3.getId() + "\t" + p3.getDesk() + "\t" + p3.getSum());
 //		}
 //		// 查表單
+//		List<Object> l = new porderDao().queryAll();
+//		Object[] p = l.toArray();
+//		porder[] p2 = new porder[p.length];
+//
+//		for (int i = 0; i < p.length; i++) {
+//			p2[i] = (porder) p[i];
+//		}
+//		System.out.println(p2[10].getDesk());
+		//Array 第幾筆
+		List l = new porderDao().querySum(5000, 140000);
+
+		for (Object o : l) {
+			porder p = (porder) o;
+			System.out.println(p.getId() + "\t" + p.getDesk() + "\t" + p.getSum());
+		}
+		//總額區間查詢
 
 	}
 
@@ -112,6 +128,19 @@ public class porderDao implements implDao {
 		EntityManager em = implDao.get();
 
 		Query q = em.createQuery(Jpql);
+		List l = q.getResultList();
+
+		return l;
+	}
+
+	@Override
+	public List<Object> querySum(Integer start, Integer end) {
+		EntityManager em = implDao.get();
+		String Jpql = "select p from porder p where p.sum>=?1 and p.sum<=?2";
+		Query q = em.createQuery(Jpql);
+		q.setParameter(1, start);
+		q.setParameter(2, end);
+
 		List l = q.getResultList();
 
 		return l;

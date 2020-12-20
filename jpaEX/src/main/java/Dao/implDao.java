@@ -26,6 +26,8 @@ public interface implDao {
 	void deleteId(Integer id);
 
 	List<Object> queryAll();
+
+	List<Object> querySum(Integer start, Integer end);
 	
 	
 }
