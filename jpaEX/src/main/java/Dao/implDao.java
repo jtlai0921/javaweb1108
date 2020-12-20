@@ -16,4 +16,7 @@ public interface implDao {
 	}
 
 	void add(Object o);
+
+	Object get(Integer id);
+	
 }
