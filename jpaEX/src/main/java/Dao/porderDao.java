@@ -1,9 +1,12 @@
 package Dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 import javax.transaction.Transaction;
 
 import Model.porder;
@@ -31,6 +34,14 @@ public class porderDao implements implDao {
 		// 修
 		//new porderDao().deleteId(36);
 		//刪
+List l=new porderDao().queryAll();
+		
+		
+		for(Object o:l)
+		{
+			porder p=(porder)o;
+			System.out.println(p.getId()+"\t"+p.getDesk()+"\t"+p.getSum());
+		}
 
 	}
 
@@ -95,4 +106,16 @@ public class porderDao implements implDao {
 		em.close();
 
 	}
+	@Override
+	public List<Object> queryAll() {
+		String Jpql="select p from porder p";
+		EntityManager em=implDao.get();
+		
+		Query q=em.createQuery(Jpql);		
+		List l=q.getResultList();
+		
+		
+		return l;
+	}
+	
 }

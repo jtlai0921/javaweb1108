@@ -1,5 +1,7 @@
 package Dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -22,5 +24,8 @@ public interface implDao {
 	void update(Integer id, Object o);
 
 	void deleteId(Integer id);
+
+	List<Object> queryAll();
+	
 	
 }
