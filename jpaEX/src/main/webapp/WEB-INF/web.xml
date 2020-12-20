@@ -4,4 +4,24 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>addPorderController</servlet-name>
+  	<display-name>addPorderController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.addPorderController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>confirmController</servlet-name>
+  	<display-name>confirmController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.confirmController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addPorderController</servlet-name>
+  	<url-pattern>/addPorderController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>confirmController</servlet-name>
+  	<url-pattern>/confirmController</url-pattern>
+  </servlet-mapping>
 </web-app>

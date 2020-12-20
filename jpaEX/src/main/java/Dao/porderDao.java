@@ -50,12 +50,12 @@ public class porderDao implements implDao {
 //		}
 //		System.out.println(p2[10].getDesk());
 		//Array 第幾筆
-		List l = new porderDao().querySum(5000, 140000);
-
-		for (Object o : l) {
-			porder p = (porder) o;
-			System.out.println(p.getId() + "\t" + p.getDesk() + "\t" + p.getSum());
-		}
+//		List l = new porderDao().querySum(5000, 144400);
+//
+//		for (Object o : l) {
+//			porder p = (porder) o;
+//			System.out.println(p.getId() + "\t" + p.getDesk() + "\t" + p.getSum());
+//		}
 		//總額區間查詢
 
 	}
