@@ -20,5 +20,7 @@ public interface implDao {
 	Object get(Integer id);
 
 	void update(Integer id, Object o);
+
+	void deleteId(Integer id);
 	
 }

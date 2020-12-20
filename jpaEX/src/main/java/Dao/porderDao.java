@@ -13,19 +13,25 @@ public class porderDao implements implDao {
 	public static void main(String[] args) {
 		// System.out.println(implDao.get());
 
-		porder p = new porder("你很帥", 4, 4, 4);
+		// porder p = new porder("你很帥", 4, 4, 4);
 
-		new porderDao().add(p);
-		porder p1 = (porder) new porderDao().get(10);
+		// new porderDao().add(p);
+		// 增
+		// porder p1 = (porder) new porderDao().get(10);
 
-		System.out.println(p1.getId() + "\t" + p1.getDesk() + "\t" + p1.getSum() + p1.getA());
+		// System.out.println(p1.getId() + "\t" + p1.getDesk() + "\t" + p1.getSum() +
+		// p1.getA());
+		// 查
+//		porder p2=new porder();
+//		p2.setDesk("很帥");
+//		p2.setA(50);
+//		p2.setB(30);
+//		
+//		new porderDao().update(2, p2);
+		// 修
+		//new porderDao().deleteId(36);
+		//刪
 
-		porder p2=new porder();
-		p2.setDesk("很帥");
-		p2.setA(50);
-		p2.setB(30);
-		
-		new porderDao().update(2, p2);
 	}
 
 	@Override
@@ -72,6 +78,19 @@ public class porderDao implements implDao {
 
 		t.begin();
 		em.merge(p2);
+		t.commit();
+		em.close();
+
+	}
+
+	@Override
+	public void deleteId(Integer id) {
+		EntityManager em = implDao.get();
+		porder p = em.find(porder.class, id);
+
+		EntityTransaction t = em.getTransaction();
+		t.begin();
+		em.remove(p);
 		t.commit();
 		em.close();
 
