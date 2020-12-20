@@ -14,4 +14,6 @@ public interface implDao {
 		
 		return em;
 	}
+
+	void add(Object o);
 }

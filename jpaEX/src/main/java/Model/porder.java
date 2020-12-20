@@ -67,12 +67,5 @@ public class porder {
 		this.sum = sum;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
 
 }
