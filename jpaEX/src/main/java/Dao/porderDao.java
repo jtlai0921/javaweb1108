@@ -14,34 +14,33 @@ import Model.porder;
 public class porderDao implements implDao {
 
 	public static void main(String[] args) {
-		// System.out.println(implDao.get());
-
-		// porder p = new porder("你很帥", 4, 4, 4);
-
-		// new porderDao().add(p);
-		// 增
-		// porder p1 = (porder) new porderDao().get(10);
-
-		// System.out.println(p1.getId() + "\t" + p1.getDesk() + "\t" + p1.getSum() +
-		// p1.getA());
-		// 查
+//		 System.out.println(implDao.get());
+//
+//		 porder p = new porder("你很帥", 4, 4, 4);
+//
+//		// new porderDao().add(p);
+//		// 增
+//		 porder p1 = (porder) new porderDao().get(10);
+//
+//		 System.out.println(p1.getId() + "\t" + p1.getDesk() + "\t" + p1.getSum() +
+//		 p1.getA());
+//		// 查
 //		porder p2=new porder();
 //		p2.setDesk("很帥");
 //		p2.setA(50);
 //		p2.setB(30);
-//		
-//		new porderDao().update(2, p2);
-		// 修
-		//new porderDao().deleteId(36);
-		//刪
-List l=new porderDao().queryAll();
-		
-		
-		for(Object o:l)
-		{
-			porder p=(porder)o;
-			System.out.println(p.getId()+"\t"+p.getDesk()+"\t"+p.getSum());
-		}
+////		
+////		new porderDao().update(2, p2);
+//		// 修
+//		// new porderDao().deleteId(36);
+//		// 刪
+//		List l = new porderDao().queryAll();
+//
+//		for (Object o : l) {
+//			porder p3 = (porder) o;
+//			System.out.println(p3.getId() + "\t" + p3.getDesk() + "\t" + p3.getSum());
+//		}
+//		// 查表單
 
 	}
 
@@ -106,16 +105,16 @@ List l=new porderDao().queryAll();
 		em.close();
 
 	}
+
 	@Override
 	public List<Object> queryAll() {
-		String Jpql="select p from porder p";
-		EntityManager em=implDao.get();
-		
-		Query q=em.createQuery(Jpql);		
-		List l=q.getResultList();
-		
-		
+		String Jpql = "select p from porder p";
+		EntityManager em = implDao.get();
+
+		Query q = em.createQuery(Jpql);
+		List l = q.getResultList();
+
 		return l;
 	}
-	
+
 }
