@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="javawebex" path="/javawebex" reloadable="true" source="org.eclipse.jst.jee.server:javawebex"/><Context docBase="school" path="/school" reloadable="true" source="org.eclipse.jst.jee.server:school"/><Context docBase="company" path="/company" reloadable="true" source="org.eclipse.jst.jee.server:company"/><Context docBase="OrderProject" path="/OrderProject" reloadable="true" source="org.eclipse.jst.j2ee.server:OrderProject"/><Context docBase="jpaEX" path="/jpaEX" reloadable="true" source="org.eclipse.jst.j2ee.server:jpaEX"/></Host>
+      <Context docBase="javawebex" path="/javawebex" reloadable="true" source="org.eclipse.jst.jee.server:javawebex"/><Context docBase="school" path="/school" reloadable="true" source="org.eclipse.jst.jee.server:school"/><Context docBase="company" path="/company" reloadable="true" source="org.eclipse.jst.jee.server:company"/><Context docBase="OrderProject" path="/OrderProject" reloadable="true" source="org.eclipse.jst.j2ee.server:OrderProject"/><Context docBase="jpaEX" path="/jpaEX" reloadable="true" source="org.eclipse.jst.j2ee.server:jpaEX"/><Context docBase="Gjun" path="/Gjun" reloadable="true" source="org.eclipse.jst.j2ee.server:Gjun"/></Host>
     </Engine>
   </Service>
 </Server>
