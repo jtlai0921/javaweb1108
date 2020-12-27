@@ -24,4 +24,12 @@
   	<servlet-name>loginController</servlet-name>
   	<url-pattern>/loginController</url-pattern>
   </servlet-mapping>
+    <context-param>
+  	<param-name>X</param-name>
+  	<param-value>100</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>y</param-name>
+  	<param-value>50</param-value>
+  </context-param>
 </web-app>
