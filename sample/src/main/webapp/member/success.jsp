@@ -5,6 +5,10 @@
 <head>
 <meta charset="BIG5">
 <title>Insert title here</title>
+<%
+String X=application.getInitParameter("x");
+out.println(X);
+%>
 </head>
 
 <body>

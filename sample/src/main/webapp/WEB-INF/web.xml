@@ -14,6 +14,10 @@
   	<filter-name>loginFilter</filter-name>
   	<url-pattern>/loginFilter</url-pattern>
   </filter-mapping>
+  <listener>
+  	<listener-class>controller.testListen</listener-class>
+  </listener>
+  
   <servlet>
   	<servlet-name>loginController</servlet-name>
   	<display-name>/member/*</display-name>
@@ -25,11 +29,19 @@
   	<url-pattern>/loginController</url-pattern>
   </servlet-mapping>
     <context-param>
-  	<param-name>X</param-name>
+  	<param-name>x</param-name>
   	<param-value>100</param-value>
   </context-param>
   <context-param>
   	<param-name>y</param-name>
   	<param-value>50</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>abc</param-name>
+  	<param-value>456</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>Driver</param-name>
+  	<param-value>com.mysql.jdbc.Driver</param-value>  
   </context-param>
 </web-app>
