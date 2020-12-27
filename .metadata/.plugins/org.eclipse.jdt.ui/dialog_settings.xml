@@ -98,4 +98,7 @@
 			<item value="C:\javaweb\API\memberAPI.jar"/>
 		</list>
 	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item key="index" value="0"/>
+	</section>
 </section>

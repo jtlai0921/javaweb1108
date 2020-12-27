@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+
 <!DOCTYPE html>
 <html>
  <head>
@@ -11,12 +10,12 @@
 			
 			if(loginForm.name.value=="")
 				{
-					alert("©m¦W¤£¥iªÅ¥Õ");
+					alert("å§“åä¸å¯ç©ºç™½");
 					return ;
 				}
 			if(loginForm.user.value=="")
 				{
-				alert("±b¸¹¤£¥i¬°ªÅ");
+				alert("å¸³è™Ÿä¸å¯ç‚ºç©º");
 				return;
 				}
 			loginForm.submit();
