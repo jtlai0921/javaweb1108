@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=BIG5"
     pageEncoding="BIG5"
-    import="Model.Porder"
+    import="model.Porder"
     import="Dao.porderDao"%>
 <!DOCTYPE html>
 <html>

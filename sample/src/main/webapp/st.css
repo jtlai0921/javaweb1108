@@ -1,0 +1,15 @@
+@charset "BIG5";
+h2 {
+	color: blue;
+}
+
+#abc {
+	font-size: 200%;
+	color: red;
+}
+
+.po {
+	font-style: italic;
+	font-size: 120%;
+	background-color: rgb(100, 80, 100);
+}
