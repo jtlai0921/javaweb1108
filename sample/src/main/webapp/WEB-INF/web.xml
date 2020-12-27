@@ -4,9 +4,19 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>loginFilter</filter-name>
+  	<display-name>loginFilter</display-name>
+  	<description></description>
+  	<filter-class>controller.loginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>loginFilter</filter-name>
+  	<url-pattern>/loginFilter</url-pattern>
+  </filter-mapping>
   <servlet>
   	<servlet-name>loginController</servlet-name>
-  	<display-name>loginController</display-name>
+  	<display-name>/member/*</display-name>
   	<description></description>
   	<servlet-class>controller.loginController</servlet-class>
   </servlet>

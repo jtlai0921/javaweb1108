@@ -11,6 +11,8 @@ C:\javaweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3079671505.inde
 \company\src
 C:\javaweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2032916216.index
 \Gjun\src\main\resources
+C:\javaweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\473498003.index
+\sample\src\main\java
 C:\javaweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2843332193.index
 \javawebex\src
 C:\javaweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2833589560.index
